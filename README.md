@@ -1,2 +1,1 @@
-# Programming-Basics-with-Java
-# homework,exersise and exam from course in SoftUni
+# Homework,exersise and exam from basics course in SoftUni
