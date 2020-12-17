@@ -10,8 +10,8 @@ public class Area {
         double lengh = Math.abs (x1 - x2);
         double width = Math.abs (y1 - y2);
         double area = lengh * width;
-        double perim = 2*(lengh+width);
+        double perimeter = 2*(lengh+width);
         System.out.printf("%.2f%n",area);
-        System.out.printf("%.2f",perim);
+        System.out.printf("%.2f",perimeter);
     }
 }
