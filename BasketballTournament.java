@@ -9,14 +9,14 @@ public class BasketballTournament {
             int n=Integer.parseInt(scan.nextLine());
             countN+=n;
             for(int i=1; i<=n; i++){
-                int teamD=Integer.parseInt(scan.nextLine());
-                int team2=Integer.parseInt(scan.nextLine());
+                int teamOne=Integer.parseInt(scan.nextLine());
+                int teamTwo=Integer.parseInt(scan.nextLine());
                 count++;
-                if(teamD>team2){
-                    System.out.printf("Game %d of tournament %s: win with %d points.%n",count,tournament,teamD-team2);
+                if(teamOne>teamTwo){
+                    System.out.printf("Game %d of tournament %s: win with %d points.%n",count,tournament,teamOne-teamTwo);
                     countWin++;
                 }else{
-                    System.out.printf("Game %d of tournament %s: lost with %d points.%n",count,tournament,team2-teamD);
+                    System.out.printf("Game %d of tournament %s: lost with %d points.%n",count,tournament,teamTwo-teamOne);
                     countLost++;
                 }
             }
