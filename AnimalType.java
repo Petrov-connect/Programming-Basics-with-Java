@@ -1,7 +1,10 @@
 import java.util.Scanner;
 // created by J.M.
+
 public class AnimalType {
+    
     public static void main(String[] args) {
+        
         Scanner scan = new Scanner(System.in);
         String animal = scan.nextLine();
         switch(animal){
