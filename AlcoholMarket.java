@@ -1,7 +1,10 @@
 import java.util.Scanner;
 // created by J.M.
+
 public class AlcoholMarket {
+    
     public static void main(String[] args) {
+        
         Scanner scan = new Scanner(System.in);
         double priceOfWhiskey = Double.parseDouble(scan.nextLine());
         double litersOfBeer = Double.parseDouble(scan.nextLine());
