@@ -1,7 +1,10 @@
 import java.util.Scanner;
 // created by J.M.
+
 public class BasketballTournament {
+
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         String tournament=scan.nextLine();
         int count=0; int countWin=0; int countLost=0; int countN=0;
