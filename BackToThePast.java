@@ -1,7 +1,10 @@
 import java.util.Scanner;
 // created by J.M.
+
 public class BackToThePast {
+
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         double money = Double.parseDouble(scan.nextLine());
         double year = Double.parseDouble(scan.nextLine());
