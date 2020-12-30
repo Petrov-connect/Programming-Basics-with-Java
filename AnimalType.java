@@ -1,6 +1,6 @@
 import java.util.Scanner;
-// created by J.M.
 
+// created by J.M.
 public class AnimalType {
 
     public static void main(String[] args) {

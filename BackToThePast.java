@@ -1,6 +1,6 @@
 import java.util.Scanner;
-// created by J.M.
 
+// created by J.M.
 public class BackToThePast {
 
     public static void main(String[] args) {
@@ -8,6 +8,7 @@ public class BackToThePast {
         Scanner scan = new Scanner(System.in);
         double money = Double.parseDouble(scan.nextLine());
         double year = Double.parseDouble(scan.nextLine());
+
         double n = year - 1800;
         int y = 18;
         for (int i = 0; i <= n; i++) {

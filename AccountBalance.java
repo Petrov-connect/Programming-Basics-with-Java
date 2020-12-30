@@ -1,6 +1,6 @@
 import java.util.Scanner;
-// created by J.M.
 
+// created by J.M.
 public class AccountBalance {
 
     public static void main(String[] args) {
