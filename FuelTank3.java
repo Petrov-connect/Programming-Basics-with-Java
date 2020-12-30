@@ -1,15 +1,20 @@
 import java.util.Scanner;
+
 // created by J.M.
 public class FuelTank3 {
+
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         String fuel = scan.nextLine();
         double quantity = Double.parseDouble(scan.nextLine());
         String card = scan.nextLine();
+
         double gas = 0.93;
         double gasoline = 2.22;
         double diesel = 2.33;
         double totalPrice = 0.0;
+
         if (card.equals("Yes")) {
             gas -= 0.08;
             gasoline -= 0.18;

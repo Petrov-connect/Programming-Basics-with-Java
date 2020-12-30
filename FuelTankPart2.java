@@ -1,12 +1,17 @@
 import java.util.Scanner;
+
 // created by J.M.
 public class FuelTankPart2 {
+
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         String fuel = scan.nextLine();
         double quantity = Double.parseDouble(scan.nextLine());
         String card = scan.nextLine();
+
         double price = 0.0;
+
         if (fuel.equals("Gasoline")) {
             price = 2.22;
             if (card.equals("Yes")) {

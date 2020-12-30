@@ -1,13 +1,18 @@
 import java.util.Scanner;
+
 // created by J.M.
 public class FootballResults {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int a, b, i; int A = 0; int B = 0; int R = 0;
-        for (i = 1; i <= 3; i++) {
+
+        int A = 0;
+        int B = 0;
+        int R = 0;
+
+        for (int i = 1; i <= 3; i++) {
             String m = scan.nextLine();
-            a = m.charAt(0);
-            b = m.charAt(2);
+            int a = m.charAt(0);
+            int b = m.charAt(2);
             if (a > b) {
                 A++;
             } else if (b > a) {

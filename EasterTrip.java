@@ -1,11 +1,15 @@
 import java.util.Scanner;
+
 // created by J.M.
 public class EasterTrip {
+
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         String destination = scan.nextLine();
         String date = scan.nextLine();
         int nights = Integer.parseInt(scan.nextLine());
+
         double price=0;
         switch(destination){
             case"France":
@@ -31,6 +35,7 @@ public class EasterTrip {
                 break;
         }
             double totalPrice=nights*price;
+
         System.out.printf("Easter trip to %s : %.2f leva.",destination,totalPrice);
     }
 }

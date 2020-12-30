@@ -1,11 +1,15 @@
 import java.util.Scanner;
+
 // created by J.M.
 public class FruitShop {
+
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         String fruit    = sc.nextLine();
         String day      = sc.nextLine();
         double quantity = Double.parseDouble(sc.nextLine());
+
         String prPeriod;
         double price    = 0.0;
         if ( day.equals("Saturday") || day.equals("Sunday") ) {
