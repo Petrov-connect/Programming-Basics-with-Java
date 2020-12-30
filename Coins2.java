@@ -1,11 +1,15 @@
 import java.util.Scanner;
+
 // created by J.M.
 public class Coins2 {
+
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
-        double sum    = Double.parseDouble(sc.nextLine());
-        int    coins = 0;
-        int    sumInt = (int) (sum * 100);
+        double sum = Double.parseDouble(sc.nextLine());
+
+        int coins = 0;
+        int sumInt = (int) (sum * 100);
         coins += sumInt / 200;
         sumInt = sumInt % 200;
         coins += sumInt / 100;
@@ -21,6 +25,7 @@ public class Coins2 {
         coins += sumInt / 2;
         sumInt = sumInt % 2;
         coins += sumInt % 2;
+
         System.out.println(coins);
     }
 }

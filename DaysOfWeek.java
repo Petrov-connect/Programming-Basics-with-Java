@@ -1,10 +1,14 @@
 import java.util.Scanner;
+
 // created by J.M.
-public class DayofWeek {
+public class DaysOfWeek {
+
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         int number = Integer.parseInt(scan.nextLine());
-        switch (number){
+
+        switch (number) {
             case 1:
                 System.out.println("Monday");
                 break;
@@ -26,7 +30,7 @@ public class DayofWeek {
             case 7:
                 System.out.println("Sunday");
                 break;
-                default:
+            default:
                 System.out.println("Error");
         }
     }

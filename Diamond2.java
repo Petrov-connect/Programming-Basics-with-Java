@@ -1,19 +1,30 @@
 import java.util.Scanner;
+
 // created by J.M.
 public class Diamond2 {
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
-        int a, b; String star; String tire = "-";
-        if(n==1){
-            star="*"; System.out.println(star);
-        }else if(n==2){
-            star="**";System.out.println(star);
-        }else {
+
+        int a, b;
+        String star;
+        String tire = "-";
+        if (n == 1) {
+            star = "*";
+            System.out.println(star);
+        } else if (n == 2) {
+            star = "**";
+            System.out.println(star);
+        } else {
             if (n % 2 == 0) {
-                a = n / 2 - 1; b = n / 2 - 2; star = "**";
+                a = n / 2 - 1;
+                b = n / 2 - 2;
+                star = "**";
             } else {
-                a = n / 2; b = n / 2 - 1; star = "*";
+                a = n / 2;
+                b = n / 2 - 1;
+                star = "*";
             }
             for (int i = 1; i <= ((n - 1) / 2); i++) {
                 System.out.print(tire);
