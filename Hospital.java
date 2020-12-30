@@ -1,25 +1,29 @@
 import java.util.Scanner;
+
 // created by J.M.
 public class Hospital {
+
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         int days = Integer.parseInt(scan.nextLine());
-        int dok = 7;
-        int preg = 0;
-        int nopreg = 0;
+
+        int doctors = 7;
+        int test = 0;
+        int noTest = 0;
         for (int i = 1; i <= days; i++) {
-            int patien = Integer.parseInt(scan.nextLine());
-            if (i % 3 == 0 && nopreg > preg) {
-                dok += 1;
+            int patient = Integer.parseInt(scan.nextLine());
+            if (i % 3 == 0 && noTest > test) {
+                doctors += 1;
             }
-            if (patien < dok) {
-                preg += patien;
+            if (patient < doctors) {
+                test += patient;
             } else {
-                preg += dok;
-                nopreg += (patien - dok);
+                test += doctors;
+                noTest += (patient - doctors);
             }
         }
-        System.out.printf("Treated patients: %d.%n", preg);
-        System.out.printf("Untreated patients: %d.", nopreg);
+        System.out.printf("Treated patients: %d.%n", test);
+        System.out.printf("Untreated patients: %d.", noTest);
     }
 }

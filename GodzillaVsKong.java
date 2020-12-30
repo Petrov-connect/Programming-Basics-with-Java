@@ -1,11 +1,15 @@
 import java.util.Scanner;
+
 // created by J.M.
 public class GodzillaVsKong {
+
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         double budget = Double.parseDouble(scan.nextLine());
         int actors = Integer.parseInt(scan.nextLine());
         double priceCostum = Double.parseDouble(scan.nextLine());
+
         double decor = budget * 0.1;
         if (actors > 150) {
             priceCostum *= 0.9;

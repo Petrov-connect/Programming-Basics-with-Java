@@ -1,10 +1,14 @@
 import java.util.Scanner;
+
 // created by J.M.
 public class HotelRoom {
+
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         String month = scan.nextLine();
         int days = Integer.parseInt(scan.nextLine());
+
         double apartment = 0;
         double studio = 0;
 
