@@ -1,20 +1,26 @@
 import java.util.Scanner;
+
 // created by J.M.
 public class TravelAgency {
+
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
-        String town=scan.nextLine();
-        String packet=scan.nextLine();
-        String vip=scan.nextLine();
-        int days=Integer.parseInt(scan.nextLine());
-        double price=0; boolean x = true;
-        if(days<1){
+        String town = scan.nextLine();
+        String packet = scan.nextLine();
+        String vip = scan.nextLine();
+        int days = Integer.parseInt(scan.nextLine());
+
+        double price = 0;
+        boolean x = true;
+
+        if (days < 1) {
             System.out.println("Days must be positive number!");
             x = false;
-        } else if(days>7){
-            days-=1;
+        } else if (days > 7) {
+            days -= 1;
         }
-        if(x) {
+        if (x) {
             switch (town) {
                 case "Bansko":
                 case "Borovets":
@@ -49,7 +55,7 @@ public class TravelAgency {
                     x = false;
             }
         }
-        if(x)
-        System.out.printf("The price is %.2flv! Have a nice time!",days*price);
+        if (x)
+            System.out.printf("The price is %.2flv! Have a nice time!", days * price);
     }
 }

@@ -1,12 +1,16 @@
 import java.util.Scanner;
+
 // created by J.M.
 public class SmallShop {
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String product = scan.nextLine();
         String town = scan.nextLine();
         double quantity = Double.parseDouble(scan.nextLine());
+
         double price = 0.0;
+
         switch (town) {
             case "Sofia":
                 switch (product) {

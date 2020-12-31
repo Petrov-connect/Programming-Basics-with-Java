@@ -1,7 +1,10 @@
 import java.util.Scanner;
+
 // created by J.M.
 public class UniquePINCodes {
+
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         int a1 = Integer.parseInt(scan.nextLine());
         int a2 = Integer.parseInt(scan.nextLine());

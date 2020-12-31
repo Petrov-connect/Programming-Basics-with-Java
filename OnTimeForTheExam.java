@@ -1,14 +1,18 @@
 import java.util.Scanner;
+
 // created by J.M.
 public class OnTimeForTheExam {
+
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         int hE = Integer.parseInt(scan.nextLine());
         int mE = Integer.parseInt(scan.nextLine());
         int hA = Integer.parseInt(scan.nextLine());
         int mA = Integer.parseInt(scan.nextLine());
-        int h;
-        int m;
+
+        int h,m;
+
         if (hA > hE) {
             h = hA - hE;
             System.out.println("Late");

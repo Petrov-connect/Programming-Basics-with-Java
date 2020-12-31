@@ -1,13 +1,18 @@
 import java.util.Scanner;
+
 // created by J.M.
 public class Scholarship3 {
+
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         double familyIncome = Double.parseDouble(scanner.nextLine());
         double averageSuccess = Double.parseDouble(scanner.nextLine());
         double minSalary = Double.parseDouble(scanner.nextLine());
+
         double socialScholarship = 0;
         double scholarshipForSuccess = 0;
+
         if (familyIncome > minSalary) {
             socialScholarship = 0;
         } else {

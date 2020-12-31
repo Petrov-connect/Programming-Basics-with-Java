@@ -1,13 +1,15 @@
 import java.util.Scanner;
+
 // created by J.M.
-public class primerZa2cilaka{
+public class leftRightSum {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = Integer.parseInt(scanner.nextLine());
         int sumLeft = 0;
         int sumRight = 0;
 
-        for (int i = 0; i < 2*n; i++) {
+        for (int i = 0; i < 2 * n; i++) {
             int num = Integer.parseInt(scanner.nextLine());
             if (i < n) {
                 sumLeft += num;

@@ -1,11 +1,16 @@
 import java.util.Scanner;
+
 // created by J.M.
 public class TradeCommissions1 {
+
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         String city = sc.nextLine();
         double vol = Double.parseDouble(sc.nextLine());
+
         double com = 0.0;
+
         if (vol >= 0 && vol <= 500) {
             switch (city) {
                 case "Sofia": com += 0.05;break;

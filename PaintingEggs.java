@@ -1,12 +1,17 @@
 import java.util.Scanner;
+
 // created by J.M.
 public class PaintingEggs {
+
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         String size = scan.nextLine();
         String color = scan.nextLine();
         int part = Integer.parseInt(scan.nextLine());
+
         double price=0;
+
         switch(size){
             case"Large":
                 switch(color){
@@ -31,7 +36,8 @@ public class PaintingEggs {
                 break;
         }
         double totalPrice=part*price;
-        totalPrice=totalPrice-totalPrice*0.35;
+        totalPrice-=totalPrice*0.35;
+
         System.out.printf("%.2f leva.",totalPrice);
 
     }

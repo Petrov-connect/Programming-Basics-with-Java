@@ -1,13 +1,18 @@
 import java.util.Scanner;
+
 // created by J.M.
 public class SkiTrip {
+
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         double day = Double.parseDouble(scan.nextLine());
         String roomType = scan.nextLine();
         String grade = scan.nextLine();
+
         double night = day - 1;
         double price = 0.0;
+
         switch (roomType) {
             case "room for one person":
                 price = 18;

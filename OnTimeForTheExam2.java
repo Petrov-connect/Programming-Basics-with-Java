@@ -1,13 +1,22 @@
 import java.util.Scanner;
+
 // created by J.M.
 public class OnTimeForTheExam2 {
+
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         int hE = Integer.parseInt(scan.nextLine());
         int mE = Integer.parseInt(scan.nextLine());
         int hA = Integer.parseInt(scan.nextLine());
         int mA = Integer.parseInt(scan.nextLine());
-        int har; int hex; int late; int lateH; int lateM;
+
+        int har;
+        int hex;
+        int late;
+        int lateH;
+        int lateM;
+
         if (hE > 0) {
             hex = hE * 60 + mE;
         } else {

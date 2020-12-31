@@ -1,14 +1,19 @@
 import java.util.Scanner;
+
 // created by J.M.
 public class WorldSnookerChampionship {
+
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         String stage=scan.nextLine();
         String ticket=scan.nextLine();
         int numTickets=Integer.parseInt(scan.nextLine());
+
         char picture=scan.nextLine().charAt(0);
         boolean yes=false;
         double price=0;
+
         switch (stage){
             case"Quarter final":
                 switch (ticket){

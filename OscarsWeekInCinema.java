@@ -1,12 +1,17 @@
 import java.util.Scanner;
+
 // created by J.M.
 public class OscarsWeekInCinema {
+
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         String movieName=scan.nextLine();
         String typeHall=scan.nextLine();
         int countTickets=Integer.parseInt(scan.nextLine());
+
         double price=0;
+
         switch(movieName){
             case"A Star Is Born":
                 switch (typeHall){

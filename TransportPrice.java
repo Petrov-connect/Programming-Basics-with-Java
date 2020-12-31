@@ -1,10 +1,14 @@
 import java.util.Scanner;
+
 // created by J.M.
 public class TransportPrice {
+
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         int km = Integer.parseInt(scan.nextLine());
         String time = scan.nextLine();
+
         double price = 0.0;
 
         if (km < 20) {

@@ -1,10 +1,14 @@
 import java.util.Scanner;
+
 // created by J.M.
 public class TradeCommissions {
+
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         String town = scan.nextLine();
         double sales = Double.parseDouble(scan.nextLine());
+
         if (sales < 0) {
             System.out.println("error");
         } else if (town.equals("Sofia") || town.equals("Varna") || town.equals("Plovdiv")) {

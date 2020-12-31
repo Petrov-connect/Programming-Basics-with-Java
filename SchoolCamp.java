@@ -1,19 +1,24 @@
 import java.util.Scanner;
+
 // created by J.M.
 public class SchoolCamp {
+
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         String season = scan.nextLine();
-        String typeGrup = scan.nextLine();
+        String typeGroup = scan.nextLine();
         int students = Integer.parseInt(scan.nextLine());
         int nights = Integer.parseInt(scan.nextLine());
+
         double price = 0.0;
         String sport = "";
         double discount = 0.0;
+
         switch (season) {
             case "Winter":
-                price = typeGrup.equals("boys") || typeGrup.equals("girls") ? 9.60 : 10.0;
-                switch (typeGrup) {
+                price = typeGroup.equals("boys") || typeGroup.equals("girls") ? 9.60 : 10.0;
+                switch (typeGroup) {
                     case "girls":
                         sport = "Gymnastics";
                         break;
@@ -26,8 +31,8 @@ public class SchoolCamp {
                 }
                 break;
             case "Spring":
-                price = typeGrup.equals("boys") || typeGrup.equals("girls") ? 7.20 : 9.50;
-                switch (typeGrup) {
+                price = typeGroup.equals("boys") || typeGroup.equals("girls") ? 7.20 : 9.50;
+                switch (typeGroup) {
                     case "girls":
                         sport = "Athletics";
                         break;
@@ -40,8 +45,8 @@ public class SchoolCamp {
                 }
                 break;
             case "Summer":
-                price = typeGrup.equals("boys") || typeGrup.equals("girls") ? 15.0 : 20.0;
-                switch (typeGrup) {
+                price = typeGroup.equals("boys") || typeGroup.equals("girls") ? 15.0 : 20.0;
+                switch (typeGroup) {
                     case "girls":
                         sport = "Volleyball";
                         break;

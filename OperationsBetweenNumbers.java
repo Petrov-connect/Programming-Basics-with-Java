@@ -1,12 +1,15 @@
 import java.util.Scanner;
+
 // created by J.M.
 public class OperationsBetweenNumbers {
+
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         int n1 = Integer.parseInt(scan.nextLine());
         int n2 = Integer.parseInt(scan.nextLine());
         char operator = scan.nextLine().charAt(0);
-        double sum ;
+        double sum;
 
         switch (operator) {
             case '+':
@@ -42,10 +45,10 @@ public class OperationsBetweenNumbers {
                 }
                 break;
             case '%':
-                if (n2>0) {
+                if (n2 > 0) {
                     sum = n1 % n2;
                     System.out.printf("%d %% %d = %.0f", n1, n2, sum);
-                }else {
+                } else {
                     System.out.printf("Cannot divide %d by zero", n1);
                 }
                 break;
