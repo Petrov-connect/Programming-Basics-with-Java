@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 // created by J.M.
-public class leftRightSum {
+public class LeftRightSum {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

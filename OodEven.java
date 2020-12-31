@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 // created by J.M.
-public class oodEven {
+public class OodEven {
 
     public static void main(String[] args) {
 
