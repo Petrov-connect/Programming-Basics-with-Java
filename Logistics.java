@@ -1,28 +1,36 @@
 import java.util.Scanner;
+
 // created by J.M.
 public class Logistics {
+
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         int count = Integer.parseInt(scan.nextLine());
-        double totalton=0;int tonbus=0;int tontruk=0;int tonvlak=0;
-        for (int i =1; i <=count; i++){
+
+        double totalTon = 0;
+        int tonBus = 0;
+        int tonTruck = 0;
+        int tonTrain = 0;
+        for (int i = 1; i <= count; i++) {
             int ton = Integer.parseInt(scan.nextLine());
-            totalton+=ton;
-            if(ton<=3){
-             tonbus +=ton;
-            }else if(ton<=11){
-                 tontruk+=ton;
-            }else {
-                 tonvlak+=ton;
+            totalTon += ton;
+            if (ton <= 3) {
+                tonBus += ton;
+            } else if (ton <= 11) {
+                tonTruck += ton;
+            } else {
+                tonTrain += ton;
             }
         }
-        double price=(tonbus*200+tontruk*175+tonvlak*120)/totalton;
-        double procbus=tonbus/totalton*100;
-        double proctruk=tontruk/totalton*100;
-        double procvlak=tonvlak/totalton*100;
-        System.out.printf("%.2f%n",price);
-        System.out.printf("%.2f%%%n",procbus);
-        System.out.printf("%.2f%%%n",proctruk);
-        System.out.printf("%.2f%%",procvlak);
+        double price = (tonBus * 200 + tonTruck * 175 + tonTrain * 120) / totalTon;
+        double percentBus = tonBus / totalTon * 100;
+        double percentTruck = tonTruck / totalTon * 100;
+        double percentTrain = tonTrain / totalTon * 100;
+
+        System.out.printf("%.2f%n", price);
+        System.out.printf("%.2f%%%n", percentBus);
+        System.out.printf("%.2f%%%n", percentTruck);
+        System.out.printf("%.2f%%", percentTrain);
     }
 }
